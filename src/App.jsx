@@ -14,11 +14,12 @@ export default function App() {
       <Routes>
 
         {/* HOME PROTECTED */}
-        <Route
+        {/* <Route
           path="/"
           element={isLogin ? <Home /> : <Navigate to="/login" />}
-        />
+        /> */}
 
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/why?" element={<WhyChooseUs />} />
         <Route path="/register" element={<Register />} />
